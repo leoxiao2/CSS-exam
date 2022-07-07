@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>CSS Flex</title>
+            <style>
+                .body{
+                    display: flex ;  
+                    justify-content: center;
+                    align-items: center;
+                    height: 500px;
+                    border: 2px solid green;
+                }
+                .flex-container {
+                    display: flex ;  
+                    justify-content: center;
+                    align-items: center;
+                    width: 500px;
+                    flex-wrap:wrap;
+                    border: 2px dashed purple;
+                }
+
+                .flex-container > div {
+                    background-color: pink;
+                    padding: 30px;
+                    margin: 20px;
+                    font-size:30px;
+                    color:blue;  
+                }
+            </style>
+        </head>
+        <body class="body">
+                <div class="flex-container">
+                    <div>item 1</div>
+                    <div>item 2</div>
+                    <div>item 3</div>  
+                    <div>item 4</div>  
+                </div>
+        </body>
+</html>
